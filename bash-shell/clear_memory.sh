@@ -1,4 +1,17 @@
-# !/bin/bash
+#!/bin/bash
+# ===============================================================================================
+# Created on 2021-08-03
+# @program: clear_memory
+# @version: 1.0
+# @author: Sandro Regis Cardoso | Software Engineer
+# @contact: src.softwareengineer@gmail.com
+# @summary: Program to free memory usage. This starting coding for this program was catched from internet and once I use it from a long, 
+# long time unfortunely I don't remember the source where I found it.
+# It was adapted to be executed on Linux Debian distribuition and it works from 6.0 or higher.
+# Some initial enhancements was did few days ago until today.
+# There are also some planned improvements to be coded days ahead.
+# ===============================================================================================
+
 set -e
 	white="\033[0m"
 	yellowbold="\033[1;33m"	
@@ -37,7 +50,7 @@ set -e
 	function check_root_user {
 		root_user=$(id -u);
 		if ! [ $root_user -eq 0 ]; then
-		   echo -e $yellow"This program will executed$red as root user!"$white
+		   echo -e $yellow"This program should be executed$red as root user!"$white
 		   exit 1;
 		fi
 	}
