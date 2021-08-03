@@ -7,28 +7,68 @@ set -e
 	light_greenbold="\033[1;92m"
 	blue="\033[1;36m"
 	light_blue="\033[0;94m"
-	root_user=$(id -u)
-	if ! [ $root_user = 0 ]; then
-	   echo -e $yellow"This program should be executed as root user!"
-	   exit 1;
-	else
-		echo $yellow"|===========================================================================================|"
+	
+	function log_starting_tasks {
+		log_blank_line
+		echo -e $red"...::::: Run Tasks :::::..."
+	}
+	
+	function log_tasks_done {
+		echo -e $light_greenbold"...::::: All Tasks Are Done!"$white
+		log_blank_line
+	}
+	
+	function log_initial_header {
+		echo -e $yellow"|===========================================================================================|"
 		echo "| Current Memory Usage                                                                      |"
-		echo "|===========================================================================================|"$white
-			free -hltw;
-		echo ""
-		echo $red"...::::: Run Tasks :::::..."
-		echo $blue"...:: 1: "$light_blue"Dropping memory cache $light_greenbold[ok]"
-			sync && echo 4 > /proc/sys/vm/drop_caches;
-		echo $blue"...:: 2: "$light_blue"Turning off swapp     $light_greenbold[ok]"
-			swapoff -a;
-		echo $blue"...:: 3: "$light_blue"Turning on swapp      $light_greenbold[ok]"
-			swapon -a;
-		echo $light_greenbold"...::::: All Tasks Are Done!"$white
-		echo ""
-		echo $yellowbold"|===========================================================================================|"
+		echo -e "|===========================================================================================|"$white
+	}
+	
+	function log_resulting_header {
+		echo -e $yellowbold"|===========================================================================================|"
 		echo "| Resulting Memory Usage                                                                    |"
-		echo "|===========================================================================================|"$white
-			free -hltw;
-		exit 0;
-	fi
+		echo -e "|===========================================================================================|"$white
+	}
+	
+	function log_blank_line {
+		echo -e ""
+	}
+	
+	function check_root_user {
+		root_user=$(id -u);
+		if ! [ $root_user -eq 0 ]; then
+		   echo -e $yellow"This program will executed$red as root user!"$white
+		   exit 1;
+		fi
+	}
+	
+	function get_memory_usage {
+		free -hltw;
+	}
+	
+	function run_task1 {
+		echo -e $blue"...:: 1: "$light_blue"Dropping memory cache $light_greenbold[ok]"
+		sync && echo 4 > /proc/sys/vm/drop_caches;
+	}
+	
+	function run_task2 {
+		echo -e $blue"...:: 2: "$light_blue"Turning off swapp     $light_greenbold[ok]"
+		swapoff -a;
+	}
+	
+	function run_task3 {
+		echo -e $blue"...:: 3: "$light_blue"Turning on swapp      $light_greenbold[ok]"
+		swapon -a;
+	}
+
+
+if check_root_user; then
+	log_initial_header
+	get_memory_usage
+	log_starting_tasks
+	run_task1
+	run_task2
+	run_task3
+	log_tasks_done
+	get_memory_usage
+fi
