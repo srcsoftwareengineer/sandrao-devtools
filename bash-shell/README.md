@@ -8,7 +8,7 @@ It was adapted to be executed on Linux Debian distribuition and it works from 6.
 
 Some initial enhancements was did few days ago until today. There are also some planned improvements to be coded days ahead.
 
-<h3>Todo list:</h3>
+<h3>List of next improvements:</h3>
 
 * Create a progress bar for task **dropping memory cache**;
 
