@@ -30,7 +30,7 @@ Some initial enhancements was did few days ago until today. There are also some 
 
 * An alternative to use it is make a symbolic link into **/usr/bin**;
 
-* You can make it running these commands: **cd /usr/bin && sudo ln -s /<path-to-program>/clear_memory.sh clear_memory**
+* You can make it running these commands: **cd /usr/bin && sudo ln -s <path-to-program>/clear_memory.sh clear_memory**
 
 <h1>MIT License</h1>
 
