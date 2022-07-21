@@ -21,9 +21,7 @@ light_greenbold="\033[1;92m"
 blue="\033[1;36m"
 light_blue="\033[0;94m"
 
-
 set -e
-
 	function log_starting_tasks {
 		log_blank_line
 		echo -e $red"...::::: Run Tasks :::::..."
@@ -63,20 +61,40 @@ set -e
 	}
 
 	function run_task1 {
-		echo -e $blue"...:: 1: "$light_blue"Dropping memory cache $light_greenbold[ok]"
-		sync && echo 4 > /proc/sys/vm/drop_caches;
+		echo -e $blue"...:: 1: "$light_blue"Dropping shared memory $light_greenbold[ok]"
+		sync && echo 1 > /proc/sys/vm/drop_caches;
+		sleep 5;
 	}
 
 	function run_task2 {
-		echo -e $blue"...:: 2: "$light_blue"Turning off swapp     $light_greenbold[ok]"
-		swapoff -a;
+		echo -e $blue"...:: 2: "$light_blue"Dropping buffers memory $light_greenbold[ok]"
+		sync && echo 2 > /proc/sys/vm/drop_caches;
+		sleep 5;
 	}
 
 	function run_task3 {
-		echo -e $blue"...:: 3: "$light_blue"Turning on swapp      $light_greenbold[ok]"
-		swapon -a;
+		echo -e $blue"...:: 3: "$light_blue"Running.... $light_greenbold[ok]"
+		sync && echo 3 > /proc/sys/vm/drop_caches;
+		sleep 5;
 	}
 
+	function run_task4 {
+		echo -e $blue"...:: 4: "$light_blue"Dropping cached memory $light_greenbold[ok]"
+		sync && echo 4 > /proc/sys/vm/drop_caches;
+		sleep 5;
+	}
+
+	function run_task5 {
+		echo -e $blue"...:: 5: "$light_blue"Turning off swapp     $light_greenbold[ok]"
+		swapoff -a;
+		sleep 5;
+	}
+
+	function run_task6 {
+		echo -e $blue"...:: 6: "$light_blue"Turning on swapp      $light_greenbold[ok]"
+		swapon -a;
+		sleep 5;
+	}
 
 if check_root_user; then
 	log_initial_header
@@ -85,6 +103,10 @@ if check_root_user; then
 	run_task1
 	run_task2
 	run_task3
+	run_task4
+	run_task5
+	run_task6
 	log_tasks_done
 	get_memory_usage
 fi
+exit 0;
