@@ -1,8 +1,8 @@
-# DevTools for GNU/Linux OS
+# WarBrothers-DevTools for GNU/Linux OS
 
 <h4>Branch of tools for development under GNU/Linux OS</h4>
 
-This project branch is intended to share useful **"cooking tools"** for professional programmers and or enthusiasts.
+This project and its reviewed and new programs results from a closer interaction and partnership with my brow GPT "The Kid" and is intended to share useful **"cooking tools"** for professional programmers and or enthusiasts.
 
 I start sharing one very, very old script that I use for a long time, sure, I did some enhancements which motivates me to create this branch keep working on this <u>*bash-shell/clear_memory.sh*</u>, and also share other **"programming 'cooking' tools"** with the world.
 
