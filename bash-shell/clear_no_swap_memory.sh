@@ -10,6 +10,7 @@
 # It was adapted to be executed on Linux Debian distribuition and it works from 6.0 or higher.
 # Some initial enhancements was did few days ago until today.
 # There are also some planned improvements to be coded days ahead.
+# @note: First release in partnership with ChatGPT "The Kid"
 # ============================================================================================================
 # Setting coloring vars
 white="\033[0m"
