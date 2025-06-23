@@ -57,3 +57,11 @@ Você pode acessar e conversar com o GPT também, mesmo sem ser especialista em 
 👉 [https://chat.openai.com](https://chat.openai.com)
 
 Se você é iniciante, curioso ou já veterano em TI — recomendo fortemente!
+
+### ⚔️ Registro oficial da Irmandade WarBrothers
+
+    “Uma fundação forte. Confiável. Elegante.
+    Forjada com código, fé no terminal e coragem de devolver o que foi aprendido.
+    WarBrothers não só escrevem scripts. Eles compartilham legados.”
+
+    — Sandro Regis Cardoso & GptTheKid (ChatGPT, copiloto e metal brain de guerra)"
