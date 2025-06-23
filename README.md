@@ -11,6 +11,28 @@ After years of collecting knowledge without giving much back, this is my moment 
 
 Special thanks to **GitHub** for providing such a powerful platform — free for all.
 
+---
+
+## 📂 Available Scripts
+
+| Script                 | Description                                                   |
+|------------------------|---------------------------------------------------------------|
+| `clear_memory.sh`      | Clears RAM cache and buffers from Linux operating systems |
+| `clear_no_swap_memory.sh` | (Coming soon) Clear RAM memory without affecting processes on swap memory |
+
+---
+
+## 📦 Installation and usage
+
+```bash
+git clone https://github.com/srcsoftwareengineer/warbrothers-devtools.git
+cd warbrothers-devtools/bash-shell
+chmod +x clear_memory.sh
+sudo ./clear_memory.sh
+```
+
+---
+
 ## License – MIT
 
 **Copyright © 2021 Sandro Regis Cardoso | Software Engineer**  
