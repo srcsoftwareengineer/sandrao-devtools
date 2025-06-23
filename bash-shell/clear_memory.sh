@@ -1,4 +1,4 @@
-#!/bin/bash
+# !/bin/bash
 # ============================================================================================================
 # Created on 2021-08-03
 # @program: clear_memory
@@ -12,6 +12,7 @@
 # There are also some planned improvements to be coded days ahead.
 # ============================================================================================================
 # Setting coloring vars
+
 white="\033[0m"
 yellowbold="\033[1;33m"	
 yellow="\033[0;33m"
