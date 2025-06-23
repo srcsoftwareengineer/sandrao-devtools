@@ -69,8 +69,8 @@ set -e
 	}
 
 	function run_task4 {
-		echo -e $blue"...:: 4: "$light_blue"Dropping cached memory $light_greenbold[ok]"
-		sync && echo 4 > /proc/sys/vm/drop_caches;
+		echo -e $blue"...:: 4: "$light_blue"Reinforcing cleanse $light_greenbold[ok]"
+		sync && echo 3 > /proc/sys/vm/drop_caches;
 		sleep 5;
 	}
 	function run_task5 {
