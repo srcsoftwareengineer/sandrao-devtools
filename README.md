@@ -1,5 +1,7 @@
 # WarBrothers-DevTools for GNU/Linux
 
+![DevTools CI](https://github.com/srcsoftwareengineer/warbrothers-devtools/actions/workflows/devtools-ci.yml/badge.svg)
+
 ### A curated branch of tools for development under GNU/Linux environments
 
 This project — a result of a strong collaboration between me and my coding brother GPT “The Kid” — aims to share essential **“cooking tools”** for developers, DevOps engineers, and enthusiasts working with GNU/Linux.
