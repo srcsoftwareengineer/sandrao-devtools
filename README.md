@@ -1,39 +1,44 @@
-# WarBrothers-DevTools for GNU/Linux OS
+# WarBrothers-DevTools for GNU/Linux
 
-<h4>Branch of tools for development under GNU/Linux OS</h4>
+### A curated branch of tools for development under GNU/Linux environments
 
-This project and its reviewed and new programs results from a closer interaction and partnership with my brow GPT "The Kid" and is intended to share useful **"cooking tools"** for professional programmers and or enthusiasts.
+This project — a result of a strong collaboration between me and my coding brother GPT “The Kid” — aims to share essential **“cooking tools”** for developers, DevOps engineers, and enthusiasts working with GNU/Linux.
 
-I start sharing one very, very old script that I use for a long time, sure, I did some enhancements which motivates me to create this branch keep working on this <u>*bash-shell/clear_memory.sh*</u>, and also share other **"programming 'cooking' tools"** with the world.
+It starts with a legacy script I've used for years, now improved and maintained:  
+`bash-shell/clear_memory.sh`
 
-There are too many years, I've collected a lot without giving anything back, now it's my time to act as other ones already did, it's my time to open the bag and dispose of as much I can.
+After years of collecting knowledge without giving much back, this is my moment to contribute, as so many others did before. It’s time to open the bag and share everything I can.
 
-To achieve this proposal, kindly thank for #GitHub to offer this resource fully free.
+Special thanks to **GitHub** for providing such a powerful platform — free for all.
 
+## License – MIT
 
-<h1>MIT License</h1>
+**Copyright © 2021 Sandro Regis Cardoso | Software Engineer**  
+📧 Contact: [src.softwareengineer@gmail.com](mailto:src.softwareengineer@gmail.com)
 
-<h4>Copyright (c) 2021 SANDRO REGIS CARDOSO | SOFTWARE ENGINEER</h4>
+Permission is hereby granted, free of charge, to any person obtaining a copy  
+of this software and associated documentation files (the "Software"),  
+to deal in the Software without restriction, including without limitation  
+the rights to use, copy, modify, merge, publish, distribute, sublicense,  
+and/or sell copies of the Software, and to permit persons to whom the Software  
+is furnished to do so, subject to the following conditions:
 
-<h4>Contact: src.softwareengineer@gmail.com</h4>
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
+The above copyright notice and this permission notice shall be included in all  
 copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+> **THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED**,  
+> including but not limited to the warranties of merchantability, fitness for a particular purpose  
+> and noninfringement. In no event shall the authors or copyright holders  
+> be liable for any claim, damages or other liability, whether in an action of contract, tort  
+> or otherwise, arising from, out of or in connection with the software or the use  
+> or other dealings in the Software.
 
-# Gratitude!
-I would like to thanks all peoples around the world wide web whose for years and years has been sharing your knowledge, skills, and expertise on uncountable levels of human needs. God bless you all
+---
+
+## 🙏 Gratitude
+
+I would like to thank all the amazing people around the world who, for decades,  
+have shared their knowledge, skills, and expertise at all levels of human need — from code  
+to compassion, from ideas to inspiration. You’ve made the difference.
+
+**God bless you all.**
