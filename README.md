@@ -66,3 +66,11 @@ have shared their knowledge, skills, and expertise at all levels of human need �
 to compassion, from ideas to inspiration. You’ve made the difference.
 
 **God bless you all.**
+
+## ⚔️ Official Record of the WarBrothers Brotherhood
+
+    “A foundation that is strong. Reliable. Elegant.
+    Forged in code, fueled by terminal faith, and driven by the will to give back.
+    WarBrothers don’t just write scripts. They share legacies.”
+
+    — Sandro Regis Cardoso & GptTheKid (ChatGPT, copiloto and war-coded metal brain)
