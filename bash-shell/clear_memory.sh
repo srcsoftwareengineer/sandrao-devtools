@@ -1,18 +1,18 @@
 #!/bin/bash
 
-# ============================================================================================================
-# Created on 2021-08-03
-# @program: clear_memory
-# @version: 1.0
-# @author: Sandro Regis Cardoso | Software Engineer
-# @contact: src.softwareengineer@gmail.com
-# @summary: Program to free memory usage. This starting coding for this program was catched from internet
-# and as I use it from a long, long time, unfortunely I don't remember the source where I found it.
-# It was adapted to be executed on Linux Debian distribuition and it works from 6.0 or higher.
-# Some initial enhancements was did few days ago until today.
-# There are also some planned improvements to be coded days ahead.
-# ============================================================================================================
-# Setting coloring vars
+#============================================================================================================
+#Created on 2021-08-03
+#@program: clear_memory
+#@version: 1.0
+#@author: Sandro Regis Cardoso | Software Engineer
+#@contact: src.softwareengineer@gmail.com
+#@summary: Program to free memory usage. This starting coding for this program was catched from internet
+#and as I use it from a long, long time, unfortunely I don't remember the source where I found it.
+#It was adapted to be executed on Linux Debian distribuition and it works from 6.0 or higher.
+#Some initial enhancements was did few days ago until today.
+#There are also some planned improvements to be coded days ahead.
+#============================================================================================================
+#Setting coloring vars
 
 white="\033[0m"
 yellowbold="\033[1;33m"	
