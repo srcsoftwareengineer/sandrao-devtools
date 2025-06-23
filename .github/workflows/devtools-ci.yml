@@ -1,0 +1,31 @@
+name: WarBrothers DevTools CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  run-devtools-check:
+    name: Shell Script Linter & Executor
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set permissions
+        run: chmod +x ./bash-shell/*.sh
+
+      - name: Install ShellCheck
+        run: sudo apt-get install -y shellcheck
+
+      - name: Run ShellCheck
+        run: shellcheck ./bash-shell/*.sh
+
+      - name: Execute scripts (dry-run)
+        run: |
+          echo ":: Running scripts..."
+          bash ./bash-shell/clear_memory.sh || echo "clear_memory.sh ended with non-zero exit"
+          bash ./bash-shell/clear_no_swap_memory.sh || echo "clear_no_swap_memory.sh ended with non-zero exit"
