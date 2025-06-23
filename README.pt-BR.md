@@ -1,5 +1,7 @@
 # WarBrothers-DevTools para GNU/Linux
 
+![DevTools CI](https://github.com/srcsoftwareengineer/warbrothers-devtools/actions/workflows/devtools-ci.yml/badge.svg)
+
 ### Um conjunto de ferramentas para desenvolvimento em ambientes GNU/Linux
 
 Este projeto é resultado de uma parceria forte entre mim e meu irmão de código, GPT "The Kid", com o objetivo de compartilhar ferramentas de programação — nossas famosas **"ferramentas de cozinha"** — voltadas para programadores profissionais, DevOps ou entusiastas que trabalham com Linux no dia a dia.
