@@ -47,7 +47,7 @@ set -e
 	}
 	function check_root_user {
 		root_user=$(id -u);
-		if ! [ $root_user -eq 0 ]; then
+		if ! [ "$root_user" -eq 0 ]; then
 		   echo -e "$yellow This program need'$red' root user privilegies!'$white'"
 		   exit 1;
 		fi
